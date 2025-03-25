@@ -15,13 +15,13 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-b from-white to-gray-100">
-      <div className="max-w-2xl w-full space-y-8">
+    <main className="min-h-screen flex flex-col items-center justify-center p-4">
+      <div className="max-w-2xl w-full space-y-8 animate-fade-in">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-5xl font-bold text-blue-900 mb-4 animate-float">
             Com Quem Eu Falo?
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-blue-700 mb-8">
             Faça sua pergunta e veja quem possivelmente tem a resposta.
           </p>
         </div>
@@ -32,20 +32,22 @@ export default function Home() {
               value={question}
               onChange={(e) => setQuestion(e.target.value)}
               placeholder="Digite sua pergunta aqui..."
-              className="w-full h-32 p-4 text-lg border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none shadow-sm"
+              className="input-field h-32 resize-none glass-effect"
               required
             />
             <button
               type="submit"
-              className="absolute bottom-4 right-4 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 shadow-md"
+              className="button-primary absolute bottom-4 right-4"
             >
               Enviar
             </button>
           </div>
         </form>
 
-        <div className="mt-12 text-center text-gray-500">
-          <p>Suas perguntas serão analisadas e direcionadas para as pessoas mais adequadas</p>
+        <div className="mt-12 text-center text-blue-600">
+          <p className="animate-pulse-slow">
+            Suas perguntas serão analisadas e direcionadas para as pessoas mais adequadas
+          </p>
         </div>
       </div>
     </main>
