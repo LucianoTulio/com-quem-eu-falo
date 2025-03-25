@@ -5,8 +5,12 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Com Quem Eu Falo',
+  title: 'Com Quem Eu Falo?',
   description: 'Aplicação Next.js para gerenciamento de contatos',
+  icons: {
+    icon: '/favicon.ico',
+  },
+  manifest: '/manifest.json',
 }
 
 export default function RootLayout({
