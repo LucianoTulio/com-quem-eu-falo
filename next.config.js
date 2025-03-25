@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
+  reactStrictMode: true,
+  swcMinify: true,
   images: {
     domains: ['fonts.googleapis.com'],
   },
-  // Adiciona configurações para garantir que a aplicação funcione em produção
-  reactStrictMode: true,
-  swcMinify: true,
   // Configura o diretório de build
   distDir: '.next',
   // Configura o diretório de arquivos estáticos
